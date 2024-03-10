@@ -1,0 +1,422 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+#scrollButton {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  z-index: 999;
+  border: none;
+}
+#scrollButton i {
+  color: #e21c65;
+  transition: transform 0.5s ease;
+}
+#scrollButton:hover {
+  border: none;
+}
+
+nav {
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 255, 255, 0) 90%);
+}
+nav #navbar {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  padding: 15px 40px;
+}
+nav #navbar a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f25790;
+}
+nav #navbar a span {
+  color: #5d3b8c;
+}
+nav #navbar a:hover {
+  color: #f25790;
+}
+nav #navbar form {
+  gap: 10px;
+}
+nav #navbar form label {
+  font-size: 20px;
+  color: #fff;
+}
+nav #navbar form input {
+  width: 300px;
+  padding: 5px 15px;
+  color: #838383;
+  border: 1px solid #e21c65;
+  border-radius: 10px;
+}
+nav #navbar form input:focus {
+  outline: none;
+}
+nav #navbar form .btn-copy {
+  width: 35px;
+  height: 35px;
+  background-color: #e21c65;
+  border: none;
+  border-radius: 50px;
+  color: white;
+}
+nav #navbar form .btn-copy:hover {
+  background-color: #e43676;
+}
+nav #navbar .btn-cv {
+  font-size: 13px;
+  color: #fff;
+  background-color: #e21c65;
+}
+
+.hero {
+  display: flex;
+  min-height: 100vh;
+  background-image: url(../img/4be9dd3627cc3766692939af9a2b35d0.png);
+  background-size: cover;
+  background-position: center;
+}
+.hero .hero-text {
+  display: flex;
+  padding: 100px 0;
+}
+.hero .hero-text .text-hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero .hero-text .text-hero h2 {
+  color: white;
+  font-size: 3rem;
+}
+.hero .hero-text .text-hero h1 {
+  font-size: 4rem;
+  color: #e21c65;
+  font-weight: bold;
+  padding: 20px 0;
+}
+.hero .hero-text .text-hero p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.hero .hero-text .text-hero .social {
+  padding: 40px 0;
+}
+.hero .hero-text .text-hero .social .text-social {
+  color: #fff;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+.hero .hero-text .text-hero .social .button-social .btn-social {
+  background-color: rgba(17, 17, 17, 0.8352941176);
+  border: 1px solid #e21c65;
+  color: white;
+}
+.hero .hero-text .text-hero .social .button-social .btn-social:hover {
+  background-color: rgba(0, 0, 0, 0.8705882353);
+}
+.hero .hero-text .text-hero .email {
+  display: none;
+}
+.hero .hero-text .text-hero .email form {
+  gap: 10px;
+}
+.hero .hero-text .text-hero .email form label {
+  font-size: 20px;
+  color: #fff;
+}
+.hero .hero-text .text-hero .email form input {
+  width: 300px;
+  padding: 5px 15px;
+  color: #838383;
+  border: 1px solid #e21c65;
+  border-radius: 10px;
+}
+.hero .hero-text .text-hero .email form input:focus {
+  outline: none;
+}
+.hero .hero-text .text-hero .email form .btn-copy {
+  width: 35px;
+  height: 35px;
+  background-color: #e21c65;
+  border: none;
+  border-radius: 50px;
+  color: white;
+}
+.hero .hero-text .text-hero .email form .btn-copy:hover {
+  background-color: #e43676;
+}
+.hero .img-hero {
+  width: 400px;
+  height: 400px;
+  background-image: url(../img/GDmdVAUXwAAnmZW.jpg);
+  border-radius: 50%;
+  background-size: cover;
+  margin-left: 0;
+  border: 1px solid #e21c65;
+  transform: rotate(10deg);
+}
+.hero .img-hero:hover {
+  transform: rotate(0deg);
+  transition: all 1s ease;
+}
+.hero .img-hero:not(:hover) {
+  transition: all 1s ease;
+}
+
+.about-me {
+  padding-bottom: 200px;
+  background-color: #000000;
+}
+.about-me div .img img {
+  filter: drop-shadow(0px 0px 6px #e21c65);
+}
+.about-me div .text {
+  gap: 10px;
+}
+.about-me div .text h1 {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.about-me div .text h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Ajustar la separación vertical */
+  width: 40%;
+  height: 1px; /* Grosor del subrayado */
+  background-image: linear-gradient(to right, #fff 30%, #e21c65 10%);
+}
+.about-me div .text h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Ajustar la separación vertical */
+  width: 40%;
+  height: 1px; /* Grosor del subrayado */
+  background-image: linear-gradient(to right, #ffffff 30%, #e21c65 10%);
+}
+.about-me div .text p {
+  color: white;
+}
+.about-me div .text .certificated h2 {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.about-me div .text .certificated h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Ajustar la separación vertical */
+  width: 100%;
+  height: 2px; /* Grosor del subrayado */
+  background-color: #e21c65; /* Color del subrayado */
+}
+.about-me div .text .certificated .cert-item {
+  padding-top: 15px;
+}
+.about-me div .text .certificated .cert-item span i {
+  color: #e21c65;
+}
+.about-me div .text .certificated .cert-item div h3 {
+  font-size: 20px;
+  color: #fff;
+}
+.about-me div .text .certificated .cert-item div p {
+  font-size: 15px;
+  color: #ccc;
+}
+.about-me div .text .downloadcv {
+  display: none;
+}
+.about-me div .text .downloadcv .btn-cv {
+  font-size: 13px;
+  color: #fff;
+  background-color: #e21c65;
+}
+
+.proyectos {
+  padding: 50px 0;
+  background-color: #000000;
+  min-height: 70vh;
+}
+.proyectos .tittle {
+  padding-bottom: 50px;
+}
+.proyectos .tittle h1 {
+  color: #fff;
+  font-size: 50px;
+}
+.proyectos .info {
+  gap: 40px;
+}
+.proyectos .info .works {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.proyectos .info .works .cards {
+  transform: translateY(100%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8705882353);
+}
+.proyectos .info .works .cards h3 {
+  font-size: 20px;
+  color: white;
+}
+.proyectos .info .works .cards .code .badge {
+  color: #292929;
+}
+.proyectos .info .works .cards .btn-link {
+  border-radius: 50%;
+  padding: 10px;
+}
+.proyectos .info .works .cards .btn-link:hover {
+  background-color: rgba(0, 0, 0, 0.3568627451);
+}
+.proyectos .info .works:hover .cards {
+  transform: translateY(0%);
+  transition: all 0.5s ease;
+}
+.proyectos .info .works:not(:hover) .cards {
+  transform: translateY(100%);
+  transition: all 0.5s ease;
+}
+
+.habilidades {
+  padding: 50px 0;
+  background-color: #000000;
+}
+.habilidades .tittle {
+  padding-bottom: 50px;
+}
+.habilidades .tittle h1 {
+  color: #fff;
+  font-size: 50px;
+}
+.habilidades .skills {
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.habilidades .skills .skills-program {
+  border: 1px solid #e21c65;
+  border-radius: 10px;
+  height: 80px;
+}
+.habilidades .skills .skills-program img {
+  padding: 0 10px;
+  width: 70px;
+}
+
+footer {
+  background-color: #050505;
+}
+footer div {
+  padding: 15px 0;
+}
+footer div .logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f25790;
+}
+footer div .logo span {
+  color: #5d3b8c;
+}
+footer div .logo:hover {
+  color: #f25790;
+}
+footer div .social-footer {
+  display: flex;
+  gap: 20px;
+}
+footer div .social-footer .btn-footer {
+  color: #fff;
+  border: 1px solid #e21c65;
+  border-radius: 50px;
+}
+footer div .social-footer .btn-footer:hover {
+  background-color: #e21c65;
+}
+
+@media (max-width: 991px) {
+  .hero .hero-text {
+    justify-content: center;
+  }
+  .hero .hero-text .text-hero {
+    align-items: center;
+  }
+  .hero .hero-text .text-hero h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .hero .hero-text .text-hero .social {
+    text-align: center;
+  }
+  .about-me {
+    padding-bottom: 100px;
+  }
+  .about-me div .text {
+    align-items: center;
+  }
+  .about-me div .text p {
+    text-align: center;
+  }
+}
+@media (max-width: 720px) {
+  nav #navbar .btn-cv {
+    display: none;
+  }
+  .about-me {
+    padding-bottom: 50px;
+  }
+  .about-me div .text .downloadcv {
+    display: flex;
+  }
+}
+@media (max-width: 520px) {
+  nav #navbar {
+    flex-direction: column;
+  }
+  nav #navbar .email {
+    display: none;
+  }
+  .hero .hero-text .text-hero .email {
+    display: flex;
+  }
+  .about-me {
+    padding-bottom: 50px;
+  }
+  .about-me div {
+    padding: 0px 10px;
+  }
+  .about-me div .text p {
+    font-size: 13px;
+  }
+  .about-me div .text .certificated h2 {
+    font-size: 15px;
+  }
+  .about-me div .text .certificated .cert-item {
+    padding-top: 15px;
+  }
+  .about-me div .text .certificated .cert-item span i {
+    color: #e21c65;
+  }
+  .about-me div .text .certificated .cert-item div h3 {
+    font-size: 15px;
+  }
+  .about-me div .text .certificated .cert-item div p {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

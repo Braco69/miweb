@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BracoCr</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <button id="scrollButton" class="btn"><i class="fa-solid fa-arrow-down"></i></button>
+
+    <nav class="navbar navbar-expand-lg" style="padding-top: 0px; padding-bottom: 0px;"">
+        <div class=" container-fluid justify-content-between" id="navbar">
+        <a class="navbar-brand logo">Braco<span class="logo2">Cr.</span></a>
+        <div class="email">
+            <form class="d-flex align-items-center">
+                <input type="text" id="inputValor" value="braco1209crist@gmail.com" readonly>
+                <button type="button" class="btn btn-copy" onclick="copiarvalor(), mostrarAnuncio()">
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+            </form>
+        </div>
+        <a href="./files/CvBra.pdf" download><button class="btn btn-cv">Download CV</button></a>
+        </div>
+    </nav>
+
+    <section class="section hero align-items-center">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="col-lg-5 container hero-text">
+                <div class="text-hero align-content-center">
+                    <h2>Hello</h2>
+                    <h1>I'm Cristian Braco !</h1>
+                    <p>Front-End and Ux/Ui Designer</p>
+                    <div class="social d-flex flex-column">
+                        <h2 class="text-social"><span>@</span>Social</h2>
+                        <div class="d-flex gap-4 button-social">
+                            <a href="https://twitter.com/realmadrid" target="_blank"><button class="btn btn-social"><i
+                                        class="fa-brands fa-x-twitter"></i> Twitter</button></a>
+                            <a href="https://github.com/Braco69" target="_blank"><button class="btn btn-social"><i
+                                        class="fa-brands fa-github"></i> Github</button></a>
+                            <a href="https://www.linkedin.com/in/cristian-braco-garagundo/" target="_blank"><button
+                                    class="btn btn-social"><i class="fa-brands fa-linkedin"></i> Linkedin</button></a>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <form class="d-flex align-items-center">
+                            <input type="text" id="inputValor" value="braco1209crist@gmail.com" readonly>
+                            <button type="button" class="btn btn-copy" onclick="copiarvalor(), mostrarAnuncio()">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 container align-items-center img-hero d-lg-block d-none">
+            </div>
+        </div>
+    </section>
+
+    <section class="section about-me">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="col-lg-5 d-lg-block d-none img">
+                <img src="./img/bd267a3ba088a2be7041679bc4d71198-removebg-preview.png" alt="perfil" width="500px">
+            </div>
+            <div class="col-lg-5 d-flex flex-column text">
+                <h1>ABOUT ME</h1>
+                <p>Hi! I'm Cristian, a passionate 23 year old Front-end Programmer.
+                    My focus is on merging exceptional functionality with attractive design,
+                    constantly seeking innovation and continuous improvement.
+                </p>
+                <div class="certificated">
+                    <h2>CERTIFICATES</h2>
+                    <div class="d-flex gap-3 align-items-start cert-item">
+                        <span><i class="fa-solid fa-certificate"></i></span>
+                        <div>
+                            <h3>IT Essentials: PC Hardware and Software</h3>
+                            <p>6 August 2020</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 align-items-start cert-item">
+                        <span><i class="fa-solid fa-certificate"></i></span>
+                        <div>
+                            <h3>ICCNAv7: Introduction to Networks </h3>
+                            <p>1 January 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="downloadcv">
+                    <button class="btn btn-cv">
+                        Download Cv
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section proyectos">
+        <div class="container">
+            <div class="container">
+                <div class="tittle d-flex justify-content-center ">
+                    <h1> Proyects </h1>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-center flex-wrap info">
+                <div class="col-2 d-flex flex-column justify-content-end works"
+                    style="background-image: url('./img/Rosewod-Hotel-Resort-HTML5-Template.jpg'); background-size: cover;">
+                    <div class="container d-flex align-items-center cards">
+                        <div class="container">
+                            <h3>Hotel Canny</h3>
+                            <div class="d-flex gap-2 code">
+                                <span class="badge bg-primary"><i class="fa-brands fa-react"></i> React</span>
+                                <span class="badge bg-warning"><i class="fa-brands fa-js"></i> React</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-link"><i class="fa-solid fa-link"></i></button>
+                    </div>
+                </div>
+                <div class="col-2 d-flex flex-column justify-content-end works"
+                    style="background-image: url('./img/72c403c498d99ee91ac7d6ee72634ca6.jpg'); background-size: cover;">
+                    <div class="container d-flex align-items-center cards">
+                        <div class="container">
+                            <h3>Hotel Canny</h3>
+                            <div class="d-flex gap-2 code">
+                                <span class="badge bg-primary"><i class="fa-brands fa-react"></i> React</span>
+                                <span class="badge bg-warning"><i class="fa-brands fa-js"></i> React</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-link"><i class="fa-solid fa-link"></i></button>
+                    </div>
+                </div>
+                <div class="col-2 d-flex flex-column justify-content-end works"
+                    style="background-image: url('./img/e749637393ae18612f807527b2c88da0.jpg'); background-size: cover;">
+                    <div class="container d-flex align-items-center cards">
+                        <div class="container">
+                            <h3>Hotel Canny</h3>
+                            <div class="d-flex gap-2 code">
+                                <span class="badge bg-primary"><i class="fa-brands fa-react"></i> React</span>
+                                <span class="badge bg-warning"><i class="fa-brands fa-js"></i> React</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-link"><i class="fa-solid fa-link"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section habilidades">
+        <div class="container">
+            <div class="container">
+                <div class="tittle d-flex justify-content-center">
+                    <h1> Skills </h1>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-center skills">
+                <div class="d-flex align-items-center skills-program">
+                    <img src="./img/Photoshop_icon.png" alt="photoshop_icon">
+                </div>
+                <div class="d-flex align-items-center skills-program">
+                    <img src="./img/Illustrator_icon.png" alt="illustrator_icon">
+                </div>
+                <div class="d-flex align-items-center skills-program">
+                    <img src="./img/Figma_icon.png" alt="figma_icon">
+                </div>
+                <div class="d-flex align-items-center skills-program">
+                    <img src="./img/Html_icon.png" alt="html_icon">
+                </div>
+                <div class="d-flex align-items-center skills-program">
+                    <img src="./img/Css_icon.png" alt="css_icon">
+                </div>
+                <div class="d-flex align-items-center skills-program">
+                    <img src="./img/Sass_icon.png" alt="sass_icon">
+                </div>
+                <div class="d-flex align-items-center skills-program">
+                    <img src="./img/bootstrap_icon.png" alt="bootstrap_icon">
+                </div>
+                <div class="d-flex align-items-center skills-program">
+                    <img src="./img/Javascript_icon.png" alt="javascript_icon">
+                </div>
+                <div class="d-flex align-items-center skills-program">
+                    <img src="./img/Git_icon.png" alt="git_icon">
+                </div>
+                <div class="d-flex align-items-center skills-program">
+                    <img src="./img/Angular_icon.png" alt="Angular_icon">
+                </div>
+                <div class="d-flex align-items-center skills-program">
+                    <img src="./img/React_icon.png" alt="react_icon">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="d-flex justify-content-around align-items-center">
+            <h1 class="navbar-brand logo">Braco<span class="logo2">Cr.</span></h1>
+            <div class="social-footer">
+                <a href="https://twitter.com/realmadrid" target="_blank"><button class="btn btn-footer"><i
+                            class="fa-brands fa-x-twitter"></i></button></a>
+                <a href="https://github.com/Braco69" target="_blank"><button class="btn btn-footer"><i
+                            class="fa-brands fa-github"></i></button></a>
+                <a href="https://www.linkedin.com/in/cristian-braco-garagundo/" target="_blank"><button
+                        class="btn btn-footer"><i class="fa-brands fa-linkedin"></i></button></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/24eb2a5418.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
